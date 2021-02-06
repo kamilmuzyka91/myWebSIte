@@ -1,3 +1,12 @@
-@import "./generic/reset";
-@import "./settings/index";
-@import "./elements/index.scss";
+@import "scss/generic/_reset.scss";
+@import "scss/settings/index.scss";
+@import "scss/elements/_base.scss";
+@import "scss/elements/_header.scss";
+@import "scss/elements/_opening.scss";
+@import "scss/elements/_statistics.scss";
+@import "scss/elements/_benefits.scss";
+@import "scss/elements/_pricing.scss";
+@import "scss/elements/_calculator.scss";
+@import "scss/elements/_contact.scss";
+@import "scss/elements/_footer.scss";
+
