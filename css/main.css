@@ -398,6 +398,7 @@ h2 {
   height: 70px;
   margin-bottom: 10px;
   background: #303030;
+  position: relative;
 }
 .header__container {
   display: flex;
