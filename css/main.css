@@ -517,6 +517,7 @@ h2 {
 .welcome .welcome__user .img {
   max-width: 100%;
   height: auto;
+  padding: 20px;
   margin: 20px;
 }
 .welcome .welcome__user .welcome__title {
