@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kamil Muzyka WebDeveloper</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -16,7 +17,10 @@
     <!--  HEADER  -->
     <header id="home" class="header">
         <div class="header__container container">
-            <a href="#" class="logo">MuzaDev</a>
+            <div class="logo">
+                <a href="https://github.com/kamilmuzyka91" class="logo">
+                    <i class="github fab fa-github"></i><span>Kamil Muzyka</span>
+                </a></div>
             <nav>
                 <input type="checkbox" class="menu__btn" id="menu__btn">
                 <label for="menu__btn" class="menu__toggle">
@@ -26,15 +30,36 @@
                 </label>
                 <ul class="header__nav">
                     <li class="nav__element"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__element"><a href="#benefits" class="nav__link">O mnie</a></li>
-                    <li class="nav__element"><a href="#prices" class="nav__link">Usługi</a></li>
-                    <li class="nav__element"><a href="#contact" class="nav__link">Prace</a></li>
+                    <li class="nav__element"><a href="#about" class="nav__link">O mnie</a></li>
+                    <li class="nav__element"><a href="#services" class="nav__link">Usługi</a></li>
+                    <li class="nav__element"><a href="#myWork" class="nav__link">Praca</a></li>
+                    <li class="nav__element"><a href="#gallery" class="nav__link">Galeria</a></li>
                     <li class="nav__element"><a href="#contact" class="nav__link">Kontakt</a></li>
                 </ul>
             </nav>
+
+        </div>
+        <section class="welcome">
+            <div class="welcome__user">
+                <!-- <div class="img"></div> -->
+                <img class="img" src="../../assets/place.png" alt="moje zdjęcie">
+                <p class="welcome__title">Cześć, mam na imię Kamil</p>
+                <p class="welcome__message">Jestem junior Web Developerem</p>
+                <i class="arrow fas fa-arrow-circle-down"></i>
+
+                <div class="button__wrapper">
+                    <a class="cta__button" href="#"> <i class="fa fa-download"></i> Pobierz moje CV</a>
+                </div>
+            </div>
+
+        </section>
         </div>
     </header>
     <!-- END HEADER  -->
+    <section id="about" class="aboutMe">
+
+    </section>
+    <!-- END ABOUT ME -->
     <script src="/js/app.js"></script>
 </body>
 

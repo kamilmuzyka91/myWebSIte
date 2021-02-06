@@ -8,22 +8,23 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    .logo {
+      display: flex;
+      align-items: center;
+      .github {
+        font-size: 2rem;
+        padding: 10px;
+      }
+    }
   }
 
   .nav {
-    &__element {
-      padding: 0 26px;
-
-      &:last-child {
-        padding-right: 0;
-      }
-    }
-
     &__link {
       color: $header-link-white;
       font-weight: 700;
       font-size: 0.8rem;
       text-transform: uppercase;
+      letter-spacing: 2px;
       padding: 28px 18px 22px;
       border-bottom: 4px solid transparent;
 
@@ -36,6 +37,7 @@
 
   &__nav {
     display: flex;
+    z-index: 9999;
 
     @include mobile {
       position: absolute;
@@ -54,6 +56,8 @@
       .nav__link {
         display: block;
         padding: 14px 20px;
+        color: $header-link-white;
+        background: $header-bg-grey;
       }
     }
   }
@@ -70,6 +74,7 @@
         &:checked {
           ~ .header__nav {
             display: flex;
+            background: $header-bg-grey;
           }
 
           ~ .menu__toggle {

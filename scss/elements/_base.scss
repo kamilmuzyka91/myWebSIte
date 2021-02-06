@@ -3,7 +3,7 @@
 }
 
 body {
-  //   font-family: $font-open-sans;
+  font-family: $primary-font;
 }
 
 a {
@@ -29,5 +29,6 @@ h2 {
     font-size: 1.2rem;
     font-weight: 700;
     color: $header-bg-white;
+    letter-spacing: 3px;
   }
 }
