@@ -659,4 +659,58 @@ h2 {
 .aboutMe .git__link {
   color: #000;
 }
+
+.services .services__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 792px) {
+  .services .services__container {
+    justify-content: center;
+    margin-top: 3.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .services .services__container {
+    justify-content: center;
+    margin-top: 3.5rem;
+  }
+}
+.services .services__container .services__cos {
+  text-align: center;
+}
+.services .services__container .services__tiles {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  max-width: 25rem;
+  line-height: 1.6rem;
+  margin: 20px;
+}
+.services .services__container .services__tiles .services__icon {
+  font-size: 2.7em;
+  color: #484848;
+}
+.services .services__container .services__tiles .services__icon:hover {
+  transform: rotateY(360deg);
+  transition: all 1s ease-in-out;
+}
+.services .services__container .services__tiles .services__title {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0.8rem;
+}
+.services .services__container .services__tiles .services__description {
+  color: #484848;
+  letter-spacing: 1px;
+}
+.services .services__container .s-line {
+  margin: 0.8rem auto 0.8rem;
+  width: 3.4rem;
+  height: 1px;
+  background: #333;
+}
 /*# sourceMappingURL=main.css.map */
