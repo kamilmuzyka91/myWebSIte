@@ -24,7 +24,7 @@
         <div class="header__container container">
             <div class="logo">
                 <a href="https://github.com/kamilmuzyka91" class="logo">
-                    <i class="github fab fa-github"></i><span>Kamil Muzyka</span>
+                    <i class="github icon-about fab fa-github"></i><span>Kamil Muzyka</span>
                 </a></div>
             <nav>
                 <input type="checkbox" class="menu__btn" id="menu__btn">
@@ -35,18 +35,16 @@
                 </label>
                 <ul class="header__nav">
                     <li class="nav__element"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__element"><a href="#about" class="nav__link">O mnie</a></li>
+                    <li class="nav__element"><a href="#aboutMe" class="nav__link">O mnie</a></li>
                     <li class="nav__element"><a href="#services" class="nav__link">Usługi</a></li>
                     <li class="nav__element"><a href="#myWork" class="nav__link">Praca</a></li>
                     <li class="nav__element"><a href="#gallery" class="nav__link">Galeria</a></li>
                     <li class="nav__element"><a href="#contact" class="nav__link">Kontakt</a></li>
                 </ul>
             </nav>
-
         </div>
         <section class="welcome">
             <div class="welcome__user">
-                <!-- <div class="img"></div> -->
                 <img class="img" src="../../assets/place.png" alt="moje zdjęcie">
                 <p class="welcome__title">Cześć, mam na imię Kamil</p>
                 <p class="welcome__message">Jestem junior frontend developerem</p>
@@ -61,13 +59,39 @@
         </div>
     </header>
     <!-- END HEADER  -->
-    <section id="about" class="aboutMe">
-        <h1 class="about__title">Cześć, mam na imię Kamil</h1>
-        <p class="kurwa">KURWAAAA !!!!!!!!!!!!!!!!!!!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            unde laboriosam harum sunt vitae placeat porro nam, ad voluptate eligendi esse illo iusto doloribus
-            necessitatibus! Assumenda nam a modi odit.</p>
+    <section id="aboutMe" class="aboutMe container">
+        <article class="about">
+            <h1 class="about__title">Cześć, mam na imię Kamil</h1>
+            <p class="about__content">Jestem junior frontend developerem. Robię piękne, profesjonalne strony
+                internetowe.
+                Moje strony są pisane od podstaw przy użyciu najnowszych technologi web'owych. Spełniają najnowsze
+                standardy w zakresie
+                dostępności dla osób niepełnosprawnych, zawsze są przystosowane do przeglądania na urządzeniach
+                mobilnych, optymalizowane pod względem czasu ładowania w przeglądarce i spełniają powszechne dobre
+                praktyki pisania kodu.
+                ładowania </p>
+        </article>
+        <article class="about">
+            <h2 class="about__title">Technologie z których korzystam</h2>
+            <p class="about__content icon-content">
+                <i class="icon-about fab fa-html5" alt="agile icon"></i>
+                <i class="icon-about fab fa-css3-alt" alt="css icon"></i>
+                <i class="icon-about fab fa-sass" alt="sass icon"></i>
+                <i class="icon-about fab fa-js-square" alt="java script icon"></i>
+                <i class="icon-about fab fa-react" alt="react icon"></i>
+                <i class="icon-about fab fa-git-square" alt="github icon"></i>
+                <i class="icon-about fab fa-gulp" alt="gulp icon"></i>
+                <img src="./assets/webpack.svg" alt="webpack icon">
+                <i class="icon-about fab fa-npm" alt="agile icon"></i>
+                <i class="icon-about fab fa-linux" alt="agile icon"></i>
+                <img src="./assets/agile.png" alt="agile icon">
+            </p>
+        </article>
     </section>
     <!-- END ABOUT ME -->
+    <i class="fas fa-mobile-alt"></i>
+    <i class="fas fa-tablet-alt"></i>
+    <i class="fas fa-desktop"></i>
     <script src="/js/app.js"></script>
 </body>
 

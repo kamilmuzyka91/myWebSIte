@@ -1,6 +1,64 @@
 .aboutMe {
-  position: absolute;
-  z-index: 6000000000;
-  top: 1000px;
-  left: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 850px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    align-items: center;
+  }
+
+  .about {
+    max-width: 600px;
+    text-align: center;
+
+    .about__title {
+      font-size: 1.5em;
+      padding: 1.5rem;
+    }
+    .icon-content {
+      .icon-about {
+        font-size: 40px;
+        padding: 1.5rem;
+        &:nth-child(1) {
+          color: $html-icon;
+        }
+        &:nth-child(2) {
+          color: $css-icon;
+        }
+        &:nth-child(3) {
+          color: $sass-icon;
+        }
+        &:nth-child(4) {
+          color: $js-icon;
+        }
+        &:nth-child(5) {
+          color: $react-icon;
+        }
+        &:nth-child(6) {
+          color: $github-icon;
+        }
+        &:nth-child(7) {
+          color: $gulp-icon;
+        }
+        &:nth-child(8) {
+          color: $npm-icon;
+        }
+        &:nth-child(9) {
+          color: $tux-icon;
+        }
+      }
+    }
+    &:first-child {
+      text-align: left;
+      line-height: 1.5rem;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
 }
