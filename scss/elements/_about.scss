@@ -3,6 +3,8 @@
   justify-content: space-around;
   margin-top: 850px;
 
+  font-family: $primary-font;
+
   @include mobile {
     flex-direction: column;
   }
@@ -16,8 +18,13 @@
     text-align: center;
 
     .about__title {
+      color: $title-color;
       font-size: 1.5em;
       padding: 1.5rem;
+    }
+    .about__content {
+      color: $description-color;
+      font-size: 1em;
     }
     .icon-content {
       .icon-about {
@@ -60,5 +67,27 @@
         text-align: center;
       }
     }
+  }
+  .about__contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: $description-color;
+    font-size: 1em;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    span:first-of-type {
+      padding: 1rem 0;
+    }
+    i {
+      padding: 5px;
+    }
+  }
+  .git__link {
+    color: #000;
   }
 }

@@ -572,6 +572,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   margin-top: 850px;
+  font-family: "Lato", sans-serif;
 }
 @media (max-width: 792px) {
   .aboutMe {
@@ -588,8 +589,13 @@ h2 {
   text-align: center;
 }
 .aboutMe .about .about__title {
+  color: #333;
   font-size: 1.5em;
   padding: 1.5rem;
+}
+.aboutMe .about .about__content {
+  color: #484848;
+  font-size: 1em;
 }
 .aboutMe .about .icon-content .icon-about {
   font-size: 40px;
@@ -630,5 +636,26 @@ h2 {
   .aboutMe .about:first-child {
     text-align: center;
   }
+}
+.aboutMe .about__contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #484848;
+  font-size: 1em;
+}
+@media (max-width: 792px) {
+  .aboutMe .about__contact {
+    flex-direction: column;
+  }
+}
+.aboutMe .about__contact span:first-of-type {
+  padding: 1rem 0;
+}
+.aboutMe .about__contact i {
+  padding: 5px;
+}
+.aboutMe .git__link {
+  color: #000;
 }
 /*# sourceMappingURL=main.css.map */
