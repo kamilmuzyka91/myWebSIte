@@ -587,6 +587,7 @@ h2 {
 .aboutMe .about {
   max-width: 600px;
   text-align: center;
+  margin-top: 2rem;
 }
 .aboutMe .about .about__title {
   color: #333;
