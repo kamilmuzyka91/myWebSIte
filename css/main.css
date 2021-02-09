@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -372,10 +372,6 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 2.25rem;
-}
-
 .container {
   width: 1352px;
   margin: 0 auto;
@@ -494,6 +490,20 @@ h2 {
   }
 }
 
+.top-arrow {
+  font-size: 3.1rem;
+  color: #efd835;
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  z-index: 99999999;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.top-arrow:hover {
+  opacity: 1;
+}
+
 .welcome {
   position: relative;
   display: flex;
@@ -503,6 +513,7 @@ h2 {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 .welcome .welcome__user {
   position: absolute;
@@ -570,75 +581,84 @@ h2 {
 
 .aboutMe {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  margin-top: 950px;
+}
+.aboutMe .section__title {
+  font-size: 2.3em;
+  text-align: center;
+}
+.aboutMe .about__container {
+  display: flex;
   justify-content: space-around;
-  margin-top: 850px;
-  font-family: "Lato", sans-serif;
 }
 @media (max-width: 792px) {
-  .aboutMe {
+  .aboutMe .about__container {
     flex-direction: column;
   }
 }
 @media (max-width: 1024px) {
-  .aboutMe {
+  .aboutMe .about__container {
     align-items: center;
   }
 }
-.aboutMe .about {
+.aboutMe .about__container .about {
   max-width: 600px;
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem;
 }
-.aboutMe .about .about__title {
+.aboutMe .about__container .about .about__title {
   color: #333;
   font-size: 1.5em;
   padding: 1.5rem;
 }
-.aboutMe .about .about__content {
+.aboutMe .about__container .about .about__content {
   color: #484848;
-  font-size: 1em;
+  font-size: 1.1em;
 }
-.aboutMe .about .icon-content .icon-about {
+.aboutMe .about__container .about .icon-content .icon-about {
   font-size: 40px;
   padding: 1.5rem;
 }
-.aboutMe .about .icon-content .icon-about:nth-child(1) {
+.aboutMe .about__container .about .icon-content .icon-about:nth-child(1) {
   color: #e96230;
 }
-.aboutMe .about .icon-content .icon-about:nth-child(2) {
+.aboutMe .about__container .about .icon-content .icon-about:nth-child(2) {
   color: #31a4d8;
 }
-.aboutMe .about .icon-content .icon-about:nth-child(3) {
+.aboutMe .about__container .about .icon-content .icon-about:nth-child(3) {
   color: #c76494;
 }
-.aboutMe .about .icon-content .icon-about:nth-child(4) {
+.aboutMe .about__container .about .icon-content .icon-about:nth-child(4) {
   color: #efd835;
 }
-.aboutMe .about .icon-content .icon-about:nth-child(5) {
+.aboutMe .about__container .about .icon-content .icon-about:nth-child(5) {
   color: #5ed3f3;
 }
-.aboutMe .about .icon-content .icon-about:nth-child(6) {
+.aboutMe .about__container .about .icon-content .icon-about:nth-child(6) {
   color: #302f2f;
 }
-.aboutMe .about .icon-content .icon-about:nth-child(7) {
+.aboutMe .about__container .about .icon-content .icon-about:nth-child(7) {
   color: #e44b4c;
 }
-.aboutMe .about .icon-content .icon-about:nth-child(8) {
+.aboutMe .about__container .about .icon-content .icon-about:nth-child(8) {
   color: #c53a35;
 }
-.aboutMe .about .icon-content .icon-about:nth-child(9) {
+.aboutMe .about__container .about .icon-content .icon-about:nth-child(9) {
   color: #313131;
 }
-.aboutMe .about:first-child {
+.aboutMe .about__container .about:first-child {
   text-align: left;
   line-height: 1.5rem;
 }
 @media (max-width: 792px) {
-  .aboutMe .about:first-child {
+  .aboutMe .about__container .about:first-child {
     text-align: center;
   }
 }
-.aboutMe .about__contact {
+.aboutMe .about__container .about__contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -646,40 +666,49 @@ h2 {
   font-size: 1em;
 }
 @media (max-width: 792px) {
-  .aboutMe .about__contact {
+  .aboutMe .about__container .about__contact {
     flex-direction: column;
   }
 }
-.aboutMe .about__contact span:first-of-type {
+.aboutMe .about__container .about__contact span:first-of-type {
   padding: 1rem 0;
 }
-.aboutMe .about__contact i {
+.aboutMe .about__container .about__contact i {
   padding: 5px;
 }
-.aboutMe .git__link {
+.aboutMe .about__container .git__link {
   color: #000;
 }
 
-.services .services__container {
+#section_2 {
+  background: #fafafa;
+  padding: 5rem;
+}
+#section_2 .section__title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin: 3rem;
+}
+#section_2 .services {
+  display: flex;
+  align-items: center;
+}
+#section_2 .services .services__container {
   display: flex;
   flex-wrap: wrap;
 }
 @media (max-width: 792px) {
-  .services .services__container {
+  #section_2 .services .services__container {
     justify-content: center;
-    margin-top: 3.5rem;
   }
 }
 @media (max-width: 1024px) {
-  .services .services__container {
+  #section_2 .services .services__container {
     justify-content: center;
     margin-top: 3.5rem;
   }
 }
-.services .services__container .services__cos {
-  text-align: center;
-}
-.services .services__container .services__tiles {
+#section_2 .services .services__container .services__tiles {
   display: flex;
   flex-direction: column;
   font-family: "Lato", sans-serif;
@@ -689,28 +718,57 @@ h2 {
   line-height: 1.6rem;
   margin: 20px;
 }
-.services .services__container .services__tiles .services__icon {
+#section_2 .services .services__container .services__tiles .services__icon {
   font-size: 2.7em;
   color: #484848;
 }
-.services .services__container .services__tiles .services__icon:hover {
+#section_2 .services .services__container .services__tiles .services__icon:hover {
   transform: rotateY(360deg);
   transition: all 1s ease-in-out;
 }
-.services .services__container .services__tiles .services__title {
+#section_2 .services .services__container .services__tiles .services__title {
   font-size: 1.2em;
   font-weight: 700;
   color: #333;
   margin-top: 0.8rem;
 }
-.services .services__container .services__tiles .services__description {
+#section_2 .services .services__container .services__tiles .services__description {
   color: #484848;
   letter-spacing: 1px;
 }
-.services .services__container .s-line {
+#section_2 .services .services__container .s-line {
   margin: 0.8rem auto 0.8rem;
   width: 3.4rem;
   height: 1px;
   background: #333;
+}
+#section_2 .services .services__container .services__separator-vertical {
+  border-left: 1px solid #dfdfdf;
+}
+@media (max-width: 792px) {
+  #section_2 .services .services__container .services__separator-vertical {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  #section_2 .services .services__container .services__separator-vertical {
+    display: none;
+  }
+}
+#section_2 .services .services__container .services__separator-horizontal {
+  display: block;
+  width: 100%;
+  margin: 1rem auto;
+  border-bottom: 1px solid #dfdfdf;
+}
+@media (max-width: 792px) {
+  #section_2 .services .services__container .services__separator-horizontal {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  #section_2 .services .services__container .services__separator-horizontal {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

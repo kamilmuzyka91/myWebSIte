@@ -119,3 +119,18 @@
     }
   }
 }
+
+.top-arrow {
+  font-size: 3.1rem;
+  color: $scroll-arrow;
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  z-index: 99999999;
+  cursor: pointer;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
+}

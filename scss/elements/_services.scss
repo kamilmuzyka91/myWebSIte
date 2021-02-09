@@ -1,55 +1,85 @@
-.services {
-    
-  .services__container {
+#section_2 {
+  background: $section-bg;
+  padding: 5rem;
+
+  .section__title {
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 3rem;
+  }
+
+  .services {
     display: flex;
-    flex-wrap: wrap;
-    @include mobile {
-      justify-content: center;
-      margin-top: 3.5rem;
-    }
-    @include tablet {
-      justify-content: center;
-      margin-top: 3.5rem;
-    }
-    .services__cos {
-      text-align: center;
-    }
-    .services__tiles {
+    align-items: center;
+
+    .services__container {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      @include mobile {
+        justify-content: center;
+      }
+      @include tablet {
+        justify-content: center;
+        margin-top: 3.5rem;
+      }
+      .services__tiles {
+        display: flex;
+        flex-direction: column;
 
-      font-family: $primary-font;
-      font-size: 0.9em;
-      text-align: center;
-      max-width: 25rem;
-      line-height: 1.6rem;
-      margin: 20px;
+        font-family: $primary-font;
+        font-size: 0.9em;
+        text-align: center;
+        max-width: 25rem;
+        line-height: 1.6rem;
+        margin: 20px;
 
-      .services__icon {
-        font-size: 2.7em;
-        color: $description-color;
-        &:hover {
-          transform: rotateY(360deg);
-          transition: all 1s ease-in-out;
+        .services__icon {
+          font-size: 2.7em;
+          color: $description-color;
+          &:hover {
+            transform: rotateY(360deg);
+            transition: all 1s ease-in-out;
+          }
+        }
+        .services__title {
+          font-size: 1.2em;
+          font-weight: 700;
+          color: $title-color;
+          margin-top: 0.8rem;
+        }
+        .services__description {
+          color: $description-color;
+          letter-spacing: 1px;
         }
       }
-      .services__title {
-        font-size: 1.2em;
-        font-weight: 700;
-        color: $title-color;
-        margin-top: 0.8rem;
+      // decoration line
+      .s-line {
+        margin: 0.8rem auto 0.8rem;
+        width: 3.4rem;
+        height: 1px;
+        background: $title-color;
       }
-      .services__description {
-        color: $description-color;
-        letter-spacing: 1px;
+      .services__separator-vertical {
+        border-left: 1px solid $service-separator;
+        @include mobile {
+          display: none;
+        }
+        @include tablet {
+          display: none;
+        }
       }
-    }
-
-    .s-line {
-      margin: 0.8rem auto 0.8rem;
-      width: 3.4rem;
-      height: 1px;
-      background: $title-color;
+      .services__separator-horizontal {
+        display: block;
+        width: 100%;
+        margin: 1rem auto;
+        border-bottom: 1px solid $service-separator;
+        @include mobile {
+          display: none;
+        }
+        @include tablet {
+          display: none;
+        }
+      }
     }
   }
 }
