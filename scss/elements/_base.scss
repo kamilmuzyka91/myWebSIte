@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth; // smooth scrolling after clicking on nav
 }
 
 body {
@@ -27,4 +28,3 @@ a {
     letter-spacing: 3px;
   }
 }
-
