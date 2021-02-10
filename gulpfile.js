@@ -7,6 +7,7 @@ sass.compiler = require("sass");
 const sourcemaps = require("gulp-sourcemaps");
 const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
+const cleanCSS = require('gulp-clean-css');
 
 function compileSass(done) {
   gulp
@@ -35,6 +36,13 @@ function reload(done) {
   browserSync.reload();
   done();
 }
+
+// gulp-clean-css
+gulp.task('minify-css',() => {
+  return gulp.src('./src/*.css')
+    .pipe(cleanCSS())
+    .pipe(gulp.dest('dist'));
+});
 
 exports.sass = gulp.parallel(compileSass);
 exports.default = gulp.parallel(compileSass, watcher);
