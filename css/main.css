@@ -496,13 +496,23 @@ a {
   color: #efd835;
   position: fixed;
   top: 90%;
-  left: 95%;
+  left: 90%;
   z-index: 99999999;
   cursor: pointer;
   opacity: 0.6;
 }
 .top-arrow:hover {
   opacity: 1;
+}
+@media (max-width: 792px) {
+  .top-arrow {
+    left: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .top-arrow {
+    left: 80%;
+  }
 }
 
 .row {
@@ -837,10 +847,14 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   transition-duration: 1.5s, 1s, 1s;
-  padding: 50px 50px;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   border-radius: 15px;
+}
+@media (max-width: 1352px) {
+  .gallery .gallery__container .gallery__list .lg-img {
+    padding: 50px 50px;
+  }
 }
 
 .welcome {

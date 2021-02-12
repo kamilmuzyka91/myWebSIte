@@ -125,7 +125,7 @@
   color: $scroll-arrow;
   position: fixed;
   top: 90%;
-  left: 95%;
+  left: 90%;
   z-index: 99999999;
   cursor: pointer;
   opacity: 0.6;
@@ -135,10 +135,9 @@
   }
 
   @include mobile {
-    left: 50%;
+    left: 80%;
   }
-  @include tablet
-   {
-    left: 50%;
+  @include tablet {
+    left: 80%;
   }
 }
