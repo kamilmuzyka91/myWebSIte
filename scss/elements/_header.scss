@@ -133,4 +133,12 @@
   &:hover {
     opacity: 1;
   }
+
+  @include mobile {
+    left: 50%;
+  }
+  @include tablet
+   {
+    left: 50%;
+  }
 }
