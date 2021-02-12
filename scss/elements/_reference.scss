@@ -38,10 +38,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         transition-duration: 1.5s, 1s, 1s;
-        padding: 50px 50px;
+
         background: rgb(0, 0, 0, 0.5);
         z-index: 1;
         border-radius: 15px;
+        @include notebook {
+          padding: 50px 50px;
+        }
       }
     }
   }
