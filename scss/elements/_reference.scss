@@ -1,33 +1,48 @@
-.reference__title {
-  text-align: center;
-}
+.gallery {
+  .title {
+    // align-self: baseline;
+    // justify-self: center;
+    text-align: center;
+  }
 
-.reference__container {
-  display: flex;
-  justify-content: center;
+  .gallery__container {
+    display: flex;
+    justify-content: center;
+    position: relative;
 
-  .sm-img {
-    width: 200px;
-    height: 200px;
-    background-image: url("../../assets/img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 20px;
-    // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+    .gallery__list {
+      // &:hover {
+      // }
 
-    @include mobile {
-      display: flex;
-      justify-content: center;
+      .sm-img {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+
+        @include mobile {
+          display: flex;
+          justify-content: center;
+        }
+        @include tablet {
+          display: flex;
+          justify-content: center;
+        }
+      }
+      // js toggle
+      .lg-img {
+        width: 60%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition-duration: 1.5s, 1s, 1s;
+        padding: 50px 50px;
+        background: rgb(0, 0, 0, 0.5);
+        z-index: 1;
+        border-radius: 15px;
+      }
     }
-    @include tablet {
-      display: flex;
-      justify-content: center;
-    }
-
-    // img {
-    //   width: 250px;
-    //   height: auto;
-    //   margin: 30px;
-    // }
   }
 }
