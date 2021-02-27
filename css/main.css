@@ -814,47 +814,43 @@ a {
   }
 }
 
-.gallery .title {
-  text-align: center;
-}
-.gallery .gallery__container {
+.gallery__wrapper {
   display: flex;
   justify-content: center;
+}
+.gallery__wrapper .image__overlay {
+  background: rgba(0, 0, 0, 0.8);
   position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+  width: 100%;
+  height: auto;
 }
-.gallery .gallery__container .gallery__list .sm-img {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-}
-@media (max-width: 792px) {
-  .gallery .gallery__container .gallery__list .sm-img {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (max-width: 1024px) {
-  .gallery .gallery__container .gallery__list .sm-img {
-    display: flex;
-    justify-content: center;
-  }
-}
-.gallery .gallery__container .gallery__list .lg-img {
+.gallery__wrapper .lg-img {
   width: 60%;
   height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition-duration: 1.5s, 1s, 1s;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  border-radius: 15px;
 }
-@media (max-width: 1352px) {
-  .gallery .gallery__container .gallery__list .lg-img {
-    padding: 50px 50px;
-  }
+.gallery__wrapper .gallery__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.5s linear;
+  border: 2px solid red;
+}
+.gallery__wrapper .gallery__img:first-child {
+  background-image: url(../../assets/img/dyplom_znak.png);
+}
+.gallery__wrapper .gallery__img:nth-child(2) {
+  background-image: url(../../assets/img/dyplom_znak1.png);
+}
+.gallery__wrapper .gallery__img:nth-child(3) {
+  background-image: url(../../assets/img/dyplom_znak2.png);
 }
 
 .welcome {

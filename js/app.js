@@ -6,7 +6,8 @@ const top_arrow = document.querySelector(".top-arrow");
 const wrapper = document.querySelector(".wrapper");
 
 const gallery_list = document.querySelectorAll("li.gallery__list");
-const gallery_image = document.querySelectorAll(".sm-img");
+// const gallery_image = document.querySelectorAll(".sm-img");
+const gallery_image = document.querySelectorAll("div.gallery__img");
 
 // function scrollToSection(el) {
 //   el.scrollIntoView();

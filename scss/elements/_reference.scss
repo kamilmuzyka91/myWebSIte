@@ -1,51 +1,93 @@
-.gallery {
-  .title {
-    // align-self: baseline;
-    // justify-self: center;
-    text-align: center;
+// .gallery {
+//   .title {
+//     // align-self: baseline;
+//     // justify-self: center;
+//     text-align: center;
+//   }
+
+//   .gallery__container {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+
+//     .gallery__list {
+//       // &:hover {
+//       // }
+
+//       .sm-img {
+//         width: 300px;
+//         height: 300px;
+//         padding: 20px;
+//         // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+
+//         @include mobile {
+//           display: flex;
+//           justify-content: center;
+//         }
+//         @include tablet {
+//           display: flex;
+//           justify-content: center;
+//         }
+//       }
+//       // js toggle
+//       .lg-img {
+//         width: 60%;
+//         height: auto;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         transition-duration: 1.5s, 1s, 1s;
+
+//         background: rgb(0, 0, 0, 0.5);
+//         z-index: 1;
+//         border-radius: 15px;
+//         @include notebook {
+//           padding: 50px 50px;
+//         }
+//       }
+//     }
+//   }
+// }
+.gallery__wrapper {
+  display: flex;
+  justify-content: center;
+
+  .image__overlay {
+    background: rgb(0, 0, 0, 0.8);
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+    width: 100%;
+    height: auto; 
   }
 
-  .gallery__container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    .gallery__list {
-      // &:hover {
-      // }
-
-      .sm-img {
-        width: 300px;
-        height: 300px;
-        padding: 20px;
-        // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
-
-        @include mobile {
-          display: flex;
-          justify-content: center;
-        }
-        @include tablet {
-          display: flex;
-          justify-content: center;
-        }
-      }
-      // js toggle
-      .lg-img {
+  .lg-img {
         width: 60%;
         height: auto;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition-duration: 1.5s, 1s, 1s;
+  }
 
-        background: rgb(0, 0, 0, 0.5);
-        z-index: 1;
-        border-radius: 15px;
-        @include notebook {
-          padding: 50px 50px;
-        }
-      }
+  .gallery__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s linear;
+    border: 2px solid red;
+
+    &:first-child {
+      background-image: url(../../assets/img/dyplom_znak.png);
+    }
+    &:nth-child(2) {
+      background-image: url(../../assets/img/dyplom_znak1.png);
+    }
+    &:nth-child(3) {
+      background-image: url(../../assets/img/dyplom_znak2.png);
     }
   }
 }
