@@ -35,18 +35,26 @@
         color: $description-color;
         font-size: 1.1em;
       }
-      .icon-content {
-        .icon-about {
+      .about__content {
+        color: $description-color;
+        font-size: 1.1em;
+        .about__item {
+          display: flex;
+          flex-direction: column;
+        }
+        .about-icon {
           font-size: 40px;
           padding: 1.5rem;
-          &:nth-child(1) {
-            color: $html-icon;
+
+          &:nth-of-type(1) {
+            color: $css-icon;
+        
           }
           &:nth-child(2) {
-            color: $css-icon;
+            color: $sass-icon;
           }
           &:nth-child(3) {
-            color: $sass-icon;
+            color: $html-icon;
           }
           &:nth-child(4) {
             color: $js-icon;
