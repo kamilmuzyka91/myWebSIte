@@ -1106,7 +1106,7 @@ h1 {
 }
 .grid img {
   width: 200px;
-  height: 200px;
+  height: auto;
   border: 1px solid blue;
   cursor: pointer;
 }
@@ -1133,8 +1133,13 @@ h1 {
   cursor: pointer;
 }
 #lightbox.active img {
-  width: 40%;
+  width: 50%;
   height: auto;
   cursor: auto;
+}
+@media (max-width: 792px) {
+  #lightbox.active img {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
