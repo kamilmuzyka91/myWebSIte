@@ -15,7 +15,7 @@ h1 {
   img {
     width: 200px;
     height: auto;
-    border: 1px solid blue;
+    border: 1px solid rgba(0, 0, 0, 0.8);
     cursor: pointer;
   }
 
@@ -32,6 +32,10 @@ h1 {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: none;
+
+  img {
+    max-width: 80%;
+  }
 }
 
 #lightbox.active {
@@ -43,8 +47,10 @@ h1 {
     width: 50%;
     height: auto;
     cursor: auto;
+    padding: 4px;
+    background: #fff;
     @include mobile {
-        width: 90%;
+      width: 90%;
     }
   }
 }

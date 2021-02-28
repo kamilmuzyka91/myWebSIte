@@ -1107,7 +1107,7 @@ h1 {
 .grid img {
   width: 200px;
   height: auto;
-  border: 1px solid blue;
+  border: 1px solid rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 @media (max-width: 792px) {
@@ -1125,6 +1125,9 @@ h1 {
   background: rgba(0, 0, 0, 0.8);
   display: none;
 }
+#lightbox img {
+  max-width: 80%;
+}
 
 #lightbox.active {
   display: flex;
@@ -1136,6 +1139,8 @@ h1 {
   width: 50%;
   height: auto;
   cursor: auto;
+  padding: 4px;
+  background: #fff;
 }
 @media (max-width: 792px) {
   #lightbox.active img {
