@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // DOM is ready ?
   console.log("DOM fully loaded and parsed");
+
+  // scroll to the top
 
   const top_arrow = document.querySelector(".top-arrow");
 
@@ -7,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  // gallery
+  // lightbox gallery
 
   const lightbox = document.createElement("div");
   const img = document.createElement("img");
