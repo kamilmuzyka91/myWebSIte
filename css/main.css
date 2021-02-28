@@ -360,6 +360,12 @@ textarea {
   padding: 0.2em 0;
 }
 
+.section__title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -1002,31 +1008,26 @@ a {
   background: #fafafa;
   padding: 5rem;
 }
-#section_2 .section__title {
-  font-size: 2.25rem;
-  text-align: center;
-  margin: 3rem;
-}
-#section_2 .services {
+#section_2 .services__wrapper {
   display: flex;
   align-items: center;
 }
-#section_2 .services .services__container {
+#section_2 .services__wrapper .services__container {
   display: flex;
   flex-wrap: wrap;
 }
 @media (max-width: 792px) {
-  #section_2 .services .services__container {
+  #section_2 .services__wrapper .services__container {
     justify-content: center;
   }
 }
 @media (max-width: 1024px) {
-  #section_2 .services .services__container {
+  #section_2 .services__wrapper .services__container {
     justify-content: center;
     margin-top: 3.5rem;
   }
 }
-#section_2 .services .services__container .services__tiles {
+#section_2 .services__wrapper .services__container .services__tiles {
   display: flex;
   flex-direction: column;
   font-family: "Lato", sans-serif;
@@ -1036,56 +1037,56 @@ a {
   line-height: 1.6rem;
   margin: 20px;
 }
-#section_2 .services .services__container .services__tiles .services__icon {
+#section_2 .services__wrapper .services__container .services__tiles .services__icon {
   font-size: 2.7em;
   color: #484848;
 }
-#section_2 .services .services__container .services__tiles .services__icon:hover {
+#section_2 .services__wrapper .services__container .services__tiles .services__icon:hover {
   transform: rotateY(360deg);
   transition: all 1s ease-in-out;
 }
-#section_2 .services .services__container .services__tiles .services__title {
+#section_2 .services__wrapper .services__container .services__tiles .services__title {
   font-size: 1.2em;
   font-weight: 700;
   color: #333;
   margin-top: 0.8rem;
 }
-#section_2 .services .services__container .services__tiles .services__description {
+#section_2 .services__wrapper .services__container .services__tiles .services__description {
   color: #484848;
   letter-spacing: 1px;
 }
-#section_2 .services .services__container .s-line {
+#section_2 .services__wrapper .services__container .s-line {
   margin: 0.8rem auto 0.8rem;
   width: 3.4rem;
   height: 1px;
   background: #333;
 }
-#section_2 .services .services__container .services__separator-vertical {
+#section_2 .services__wrapper .services__container .services__separator-vertical {
   border-left: 1px solid #dfdfdf;
 }
 @media (max-width: 792px) {
-  #section_2 .services .services__container .services__separator-vertical {
+  #section_2 .services__wrapper .services__container .services__separator-vertical {
     display: none;
   }
 }
 @media (max-width: 1024px) {
-  #section_2 .services .services__container .services__separator-vertical {
+  #section_2 .services__wrapper .services__container .services__separator-vertical {
     display: none;
   }
 }
-#section_2 .services .services__container .services__separator-horizontal {
+#section_2 .services__wrapper .services__container .services__separator-horizontal {
   display: block;
   width: 100%;
   margin: 1rem auto;
   border-bottom: 1px solid #dfdfdf;
 }
 @media (max-width: 792px) {
-  #section_2 .services .services__container .services__separator-horizontal {
+  #section_2 .services__wrapper .services__container .services__separator-horizontal {
     display: none;
   }
 }
 @media (max-width: 1024px) {
-  #section_2 .services .services__container .services__separator-horizontal {
+  #section_2 .services__wrapper .services__container .services__separator-horizontal {
     display: none;
   }
 }
@@ -1107,8 +1108,8 @@ h1 {
   flex-wrap: wrap;
 }
 .gallery__wrapper img {
-  width: 17rem;
-  height: 200px;
+  width: 20rem;
+  height: 30rem;
   border: 1px solid rgba(0, 0, 0, 0.8);
   cursor: pointer;
   margin: 1rem;
@@ -1132,8 +1133,9 @@ h1 {
   cursor: pointer;
 }
 #lightbox.active img {
-  width: 80%;
-  height: auto;
+  transform: scale(0.5);
+  width: 100%;
+  height: 90%;
   background: #fff;
   cursor: auto;
   padding: 4px;
@@ -1156,10 +1158,16 @@ h1 {
 
 .portfolio__wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   background: #fafafa;
+}
+.portfolio__wrapper .decor--border {
+  border: none;
+  width: auto;
+  height: auto;
 }
 .portfolio__wrapper img {
   width: 17rem;
@@ -1187,7 +1195,8 @@ h1 {
   cursor: pointer;
 }
 #lightbox.active img {
-  width: 80%;
+  transform: scale(0.5);
+  width: 100%;
   height: auto;
   background: #fff;
   cursor: auto;
@@ -1207,16 +1216,8 @@ h1 {
   min-height: 4rem;
 }
 .footer__wrapper .footer__item {
-  font-size: 40px;
-}
-.footer__wrapper .footer__item {
-  font-size: 2.5em;
+  font-size: 1em;
   color: rgba(0, 0, 0, 0.8);
-}
-.footer__wrapper .footer__item > * {
-  padding: 3rem;
-}
-.footer__wrapper span {
-  margin: 40px;
+  margin: 0.8rem;
 }
 /*# sourceMappingURL=main.css.map */

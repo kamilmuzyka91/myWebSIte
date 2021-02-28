@@ -10,10 +10,17 @@ h1 {
 
 .portfolio__wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   background: $section-bg;
+
+  .decor--border {
+    border: none;
+    width: auto;
+    height: auto;
+  }
 
   img {
     width: 17rem;
@@ -42,8 +49,8 @@ h1 {
   cursor: pointer;
 
   img {
-    // transform: scale(0.5);
-    width: 80%;
+    transform: scale(0.5);
+    width: 100%;
     height: auto;
     background: #fff;
     cursor: auto;

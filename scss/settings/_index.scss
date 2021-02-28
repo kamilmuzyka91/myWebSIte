@@ -3,3 +3,10 @@
 @import "mixins";
 
 $button-radius: 35px;
+
+.section__title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+  // with decoration img
+}

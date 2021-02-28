@@ -6,19 +6,8 @@
   min-height: 4rem;
 
   .footer__item {
-    font-size: 40px;
-
-    & {
-      font-size: 2.5em;
-      color: rgb(0, 0, 0, .8);
-      & > * {
-        // style for all children
-        padding: 3rem;
-      }
-    }
-  }
-
-  span {
-    margin: 40px;
+    font-size: 1em;
+    color: rgb(0, 0, 0, 0.8);
+    margin: 0.8rem;
   }
 }
