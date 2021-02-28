@@ -47,9 +47,8 @@ h1 {
     background: #fff;
     cursor: auto;
     padding: 4px;
-    // @include mobile {
-    //   width: 4rem;
-    //   height: auto;
-    // }
+    @include mobile {
+      width: 100%;
+    }
   }
 }

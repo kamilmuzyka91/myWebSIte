@@ -1138,4 +1138,9 @@ h1 {
   cursor: auto;
   padding: 4px;
 }
+@media (max-width: 792px) {
+  #lightbox.active img {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
