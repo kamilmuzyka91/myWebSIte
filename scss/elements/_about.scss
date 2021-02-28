@@ -13,6 +13,8 @@
   .about__container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
     @include mobile {
       flex-direction: column;
     }
@@ -105,6 +107,7 @@
     }
     .git__link {
       color: #000;
+      font-weight: bold;
     }
   }
 }
