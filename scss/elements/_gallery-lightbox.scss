@@ -41,12 +41,15 @@ h1 {
   cursor: pointer;
 
   img {
-    transform: scale(0.5);
+    // transform: scale(0.5);
+    width: 80%;
+    height: auto;
     background: #fff;
     cursor: auto;
     padding: 4px;
-    @include mobile {
-      transform: scale(0.25);
-    }
+    // @include mobile {
+    //   width: 4rem;
+    //   height: auto;
+    // }
   }
 }

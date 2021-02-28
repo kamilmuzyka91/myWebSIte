@@ -1132,14 +1132,10 @@ h1 {
   cursor: pointer;
 }
 #lightbox.active img {
-  transform: scale(0.5);
+  width: 80%;
+  height: auto;
   background: #fff;
   cursor: auto;
   padding: 4px;
-}
-@media (max-width: 792px) {
-  #lightbox.active img {
-    transform: scale(0.25);
-  }
 }
 /*# sourceMappingURL=main.css.map */
