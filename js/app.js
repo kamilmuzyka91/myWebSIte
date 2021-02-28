@@ -11,10 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const lightbox = document.createElement("div");
   const img = document.createElement("img");
+  const images = document.querySelectorAll(".gallery__img");
   lightbox.id = "lightbox";
   document.body.appendChild(lightbox);
-
-  const images = document.querySelectorAll("img");
 
   images.forEach((images) => {
     images.addEventListener("click", (e) => {
