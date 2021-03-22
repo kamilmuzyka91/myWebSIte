@@ -384,7 +384,7 @@ a {
   width: 1352px;
   margin: 0 auto;
 }
-@media (max-width: 1025px) {
+@media (mi-width: 1025px) {
   .container {
     width: 100%;
     padding: 0 15px;
@@ -919,7 +919,7 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 1025px) {
+@media (mi-width: 1025px) {
   .about__me .about__container {
     flex-direction: column;
   }
@@ -1096,7 +1096,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 #lightbox.active::before {
   font: normal 900 3em "Font Awesome 5 Free";
@@ -1108,10 +1107,20 @@ a {
   left: 85%;
 }
 #lightbox.active img {
-  width: 100%;
+  width: 120%;
   height: auto;
   background: #fff;
   cursor: auto;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #lightbox.active img {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) and (mi-width: 1025px) {
+  #lightbox.active img {
+    width: 40%;
+  }
 }
 
 h1 {
@@ -1134,14 +1143,14 @@ h1 {
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
-@media (max-width: 1025px) {
+@media (mi-width: 1025px) {
   .diploma .diploma__wrapper {
     flex-direction: row;
   }
 }
 .diploma .diploma__wrapper img {
   width: 20rem;
-  height: 30rem;
+  height: auto;
   border: 1px solid rgba(0, 0, 0, 0.8);
   cursor: pointer;
   margin: 1rem;

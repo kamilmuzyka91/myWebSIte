@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  // width: 100%;
 
   &::before {
     font: normal 900 3em "Font Awesome 5 Free";
@@ -23,14 +23,17 @@
     left: 85%;
   }
   img {
-    // transform: scale(0.5);
-    width: 100%;
+    width: 120%;
     height: auto;
     background: #fff;
     cursor: auto;
+    
+    @include tablet {
+      width: 100%;
 
-    // @include mobile {
-    //   width: 100%;
-    // }
+      @include notebook {
+        width: 40%;
+      }
+    }
   }
 }
