@@ -909,6 +909,16 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .about__me .about__container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1025px) {
+  .about__me .about__container {
+    flex-direction: row;
+  }
+}
 .about__me .about__container .about {
   max-width: 600px;
   text-align: center;

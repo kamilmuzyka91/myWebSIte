@@ -11,6 +11,14 @@
     justify-content: space-around;
     align-items: center;
 
+    @include tablet {
+      flex-direction: column;
+    }
+
+    @include notebook {
+      flex-direction: row;
+    }
+
     .about {
       max-width: 600px;
       text-align: center;
