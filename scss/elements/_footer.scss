@@ -1,14 +1,19 @@
-.footer__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 4rem;
-  background: black;
+.footer {
+  border-top: 2px solid red;
+  margin-top: 2rem;
 
-  .footer__item {
-    font-size: 1em;
-    color: rgb(0, 0, 0, 0.8);
-    margin: 0.8rem;
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 4rem;
+    background: $section-bg;
+
+    .footer__item {
+      font-size: 1em;
+      color: rgb(0, 0, 0, 0.8);
+      margin: 0.8rem;
+    }
   }
 }

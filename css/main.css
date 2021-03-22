@@ -1187,15 +1187,19 @@ h1 {
   cursor: pointer;
 }
 
-.footer__wrapper {
+.footer {
+  border-top: 2px solid red;
+  margin-top: 2rem;
+}
+.footer .footer__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 4rem;
-  background: black;
+  background: #fafafa;
 }
-.footer__wrapper .footer__item {
+.footer .footer__wrapper .footer__item {
   font-size: 1em;
   color: rgba(0, 0, 0, 0.8);
   margin: 0.8rem;
