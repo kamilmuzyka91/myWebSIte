@@ -913,6 +913,7 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 5rem;
   margin-top: 950px;
 }
 .about__me .about__container {
@@ -930,6 +931,11 @@ a {
   max-width: 600px;
   text-align: center;
   margin: 2rem;
+}
+@media (min-width: 1025px) {
+  .about__me .about__container .about {
+    max-width: 500px;
+  }
 }
 .about__me .about__container .about .about__title {
   color: #333;
