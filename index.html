@@ -56,44 +56,21 @@
         </section>
     </header>
     <!-- END HEADER  -->
-    <section id="section_1" class="aboutMe container">
-        <h1 class="section__title">Poznajmy się !</h1>
-        <img src="./assets/decoration.svg" alt="decoration">
+    <section id="section_1" class="about__me">
+        <div class="section__header">
+            <h1 class="section__title">Poznajmy się !</h1>
+            <img class="section__decoration" src="./assets/decoration.svg" alt="decoration">
+        </div>
         <div class="about__container">
             <article class="about">
                 <h2 class="about__title">Mam na imię Kamil</h2>
                 <p class="about__content">
-                    <p>Jestem junior frontend developerem, zajmuję się tworzeniem stron internetowych oraz po części
-                        reklamą. Nowymi technologiami interesuję się od zawsze, dlatego na swojej drodze edukacji
-                        wybrałem liceum informatyczne gdzie, uczyłem się podstaw informatyki takich jak wyszukiwanie,
-                        selekcjonowanie, przetwarzanie i zarządzanie informacją. </p>
-                    <br>
-                    <p>Następnie ukończyłem dwuletnią szkołę, po której zostałem technikiem informatyki, gdzie
-                        zdobywałem wiedzę między innymi z zakresu sieci komputerowych i ich projektowania, konfiguracji
-                        urządzeń sieciowych i peryferyjnych, zarządzania bazami danych i podstaw programowania. </p>
-                    <br>
-                    <p>Ze względu na szczególne zainteresowanie programowaniem internetowym ukończyłem kurs IT
-                        JavaScript/React Developer w najlepszej szkole programowania - „Coders Lab” we Wrocławiu
-                        trwający 7 miesięcy przez 396
-                        godzin, z czego 240 godzin były zajęciami praktycznej nauki programowania pod okiem zawodowych
-                        programistów. Nasza grupa odbyła także praktyczny sprint w metodologii zwinnej, pracując nad
-                        aplikacją internetową, symulacja pracy zespołu programistycznego była bardzo ciekawa i
-                        pouczająca. Aktualnie jestem w trakcie przygotowania do kursu node. Js także w „Coders Lab”.
-                    </p>
-                    <br>
-                    <p>Wiedza zdobyta na kursie oraz zaliczone egzaminy na ponad 90% pozwoliła mi wejść na drogę juniora
-                        developera i przy użyciu najnowszych technologii pisać strony, oraz aplikacje internetowe. W tym
-                        kierunku chciałbym się także dalej rozwijać. Sprawdź moje suplementy do dyplomu oraz czego
-                        dokładnie się uczyłem. </p>
-                    <br>
-                    <p> Moje dotychczasowe projekty można zobaczyć w moim profilu <a
-                            href="https://github.com/kamilmuzyka91" class="git__link">Github
-                        </a> oraz z dokładnym opisem zajęć w sekcji <a href="#section_4" class="git__link">Portfolio</a>
-                        . Aktualnie też znajdujesz się na stronie mojego autorstwa, którą napisałem sam od postaw bez
-                        użycia zewnętrznych bibliotek oraz frameworków.</p>
-                    <br>
-                    <p>Prywatnie jestem pasjonatem kolarstwa i zaczynam interesować się fotografią.</p>
-
+                    dfe
+                </p>
+                <p class="about__content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio velit excepturi ipsa unde
+                    voluptatem dolorem fuga quod accusamus tenetur molestiae veritatis voluptatibus quo ab harum
+                    architecto, exercitationem accusantium, aliquam aspernatur?
                 </p>
                 <div class="about__contact">
                     <span><i class="fas fa-phone-alt"></i>Tel. 730 600 000</span>
@@ -181,27 +158,262 @@
         </div>
     </section>
     <!-- END SERVICES -->
-    <section id="section_3" class="gallery container">
+    <section id="section_3" class="diploma">
         <div class="section__title">
-            <h1 class="section__title">Dlaczego właśnie ja ?</h1> 
+            <h1 class="section__title">Dlaczego właśnie ja ?</h1>
             <img src="./assets/decoration.svg" alt="decoration">
         </div>
-        <h2 class="gallery__title">Szkoła programowania Coders Lab we Wrocławiu</h2>
-        <div class="gallery__wrapper">
-            <img class="gallery__img" src="./assets/img/dyplom_znak.png" alt="dyplom">
-            <img class="gallery__img" src="./assets/img/dyplom_znak1.png" alt="dyplom">
-            <img class="gallery__img" src="./assets/img/dyplom_znak2.png" alt="dyplom">
+        <h2 class="diploma__title">Szkoła programowania Coders Lab we Wrocławiu</h2>
+        <p>Jako informatyk chciałem się wyspecializować w tym co najbardziej lubię.</p>
+        <div class="diploma__wrapper">
+            <img class="diploma__img" src="./assets/img/dyplom_znak.png" alt="dyplom">
+            <img class="diploma__img" src="./assets/img/dyplom_znak1.png" alt="dyplom">
+            <img class="diploma__img" src="./assets/img/dyplom_znak2.png" alt="dyplom">
         </div>
     </section>
     <section id="section_4" class="portfolio__wrapper">
         <div class="section__title">
-            <h1 class="section__title">Nad czym aktualnie pracuję ?</h1> 
+            <h1 class="section__title">Nad czym aktualnie pracuję ?</h1>
             <img class="decor--border" src="./assets/decoration.svg" alt="decoration">
         </div>
-        <img class="gallery__img" src="./assets/img/rycerze.png" alt="dyplom">
+        <div class="portfolio__pages">
+            <article class="page">
+                <h2 class="page__title">Fundacja Rycerze Rolanda</h2>
+                <!-- zamień img na div z bg-img ponieważ sama zmiana display nie wystarcza -->
+                <div> <img class="page__img" src="./assets/img/rycerze.png" alt="dyplom"></div>
+                <div class="page__description">
+                    <ul class="page__description--link">
+                        <li><a href="https://rycerzerolanda.pl" class="page__description--link"></a><br>
+                            <a href="https://construction-company-v1.netlify.app/" class="page__description--link"
+                                target="_blank">Fundacja Rycerze Rolanda</a></li><br>
+                        <li> <a href="https://github.com/kamilmuzyka91/construction-company"
+                                class="page__description--link" target="_blank">GitHub</a></li>
+
+                    </ul>
+                    <h3 class="page__description--title">Technologie:</h3>
+                    <ul class="page__description--technology">
+                        <li>Wordpress</li>
+                    </ul>
+                    <h3 class="page__description--work">Moja praca</h3>
+                    <p class="page__description--about">
+                        Wykupienie serwera oraz domeny, instalacja SSL, uzupełnianie kontentu.
+                        Aktualnie prowadzę stronę dla fundacji "Rycerze Rolanda" gdzie udzielam się społecznie.
+                        Moja rola polega na prowadzeniu strony, zbieraniu materiałów w internecie oraz w terenie.
+                        Współpracuję z działem marketingu głównego sponsora oraz zajmuję się promocją i reklamą strony
+                        internetowej, a także fundacji.
+                        Między innymi: robię i obrabiam nadesłane zdjęcia, przeprowadzam wywiady oraz piszę teksty na
+                        stronę.
+                    </p>
+                </div>
+            </article>
+            <article class="page">
+                <h2 class="page__title">Fundacja Rycerze Rolanda</h2>
+                <!-- zamień img na div z bg-img ponieważ sama zmiana display nie wystarcza -->
+                <div> <img class="page__img" src="./assets/img/rycerze.png" alt="dyplom"></div>
+                <div class="page__description">
+                    <ul class="page__description--link">
+                        <li><a href="https://rycerzerolanda.pl" class="page__description--link"></a><br>
+                            <a href="https://construction-company-v1.netlify.app/" class="page__description--link"
+                                target="_blank">Fundacja Rycerze Rolanda</a></li><br>
+                        <li> <a href="https://github.com/kamilmuzyka91/construction-company"
+                                class="page__description--link" target="_blank">GitHub</a></li>
+
+                    </ul>
+                    <h3 class="page__description--title">Technologie:</h3>
+                    <ul class="page__description--technology">
+                        <li>Wordpress</li>
+                    </ul>
+                    <h3 class="page__description--work">Moja praca</h3>
+                    <p class="page__description--about">
+                        Wykupienie serwera oraz domeny, instalacja SSL, uzupełnianie kontentu.
+                        Aktualnie prowadzę stronę dla fundacji "Rycerze Rolanda" gdzie udzielam się społecznie.
+                        Moja rola polega na prowadzeniu strony, zbieraniu materiałów w internecie oraz w terenie.
+                        Współpracuję z działem marketingu głównego sponsora oraz zajmuję się promocją i reklamą strony
+                        internetowej, a także fundacji.
+                        Między innymi: robię i obrabiam nadesłane zdjęcia, przeprowadzam wywiady oraz piszę teksty na
+                        stronę.
+                    </p>
+                </div>
+            </article>
+            <article class="page">
+                <h2 class="page__title">Fundacja Rycerze Rolanda</h2>
+                <!-- zamień img na div z bg-img ponieważ sama zmiana display nie wystarcza -->
+                <div> <img class="page__img" src="./assets/img/rycerze.png" alt="dyplom"></div>
+                <div class="page__description">
+                    <ul class="page__description--link">
+                        <li><a href="https://rycerzerolanda.pl" class="page__description--link"></a><br>
+                            <a href="https://construction-company-v1.netlify.app/" class="page__description--link"
+                                target="_blank">Fundacja Rycerze Rolanda</a></li><br>
+                        <li> <a href="https://github.com/kamilmuzyka91/construction-company"
+                                class="page__description--link" target="_blank">GitHub</a></li>
+
+                    </ul>
+                    <h3 class="page__description--title">Technologie:</h3>
+                    <ul class="page__description--technology">
+                        <li>Wordpress</li>
+                    </ul>
+                    <h3 class="page__description--work">Moja praca</h3>
+                    <p class="page__description--about">
+                        Wykupienie serwera oraz domeny, instalacja SSL, uzupełnianie kontentu.
+                        Aktualnie prowadzę stronę dla fundacji "Rycerze Rolanda" gdzie udzielam się społecznie.
+                        Moja rola polega na prowadzeniu strony, zbieraniu materiałów w internecie oraz w terenie.
+                        Współpracuję z działem marketingu głównego sponsora oraz zajmuję się promocją i reklamą strony
+                        internetowej, a także fundacji.
+                        Między innymi: robię i obrabiam nadesłane zdjęcia, przeprowadzam wywiady oraz piszę teksty na
+                        stronę.
+                    </p>
+                </div>
+            </article>
+            <article class="page">
+                <h2 class="page__title">Fundacja Rycerze Rolanda</h2>
+                <!-- zamień img na div z bg-img ponieważ sama zmiana display nie wystarcza -->
+                <div> <img class="page__img" src="./assets/img/rycerze.png" alt="dyplom"></div>
+                <div class="page__description">
+                    <ul class="page__description--link">
+                        <li><a href="https://rycerzerolanda.pl" class="page__description--link"></a><br>
+                            <a href="https://construction-company-v1.netlify.app/" class="page__description--link"
+                                target="_blank">Fundacja Rycerze Rolanda</a></li><br>
+                        <li> <a href="https://github.com/kamilmuzyka91/construction-company"
+                                class="page__description--link" target="_blank">GitHub</a></li>
+
+                    </ul>
+                    <h3 class="page__description--title">Technologie:</h3>
+                    <ul class="page__description--technology">
+                        <li>Wordpress</li>
+                    </ul>
+                    <h3 class="page__description--work">Moja praca</h3>
+                    <p class="page__description--about">
+                        Wykupienie serwera oraz domeny, instalacja SSL, uzupełnianie kontentu.
+                        Aktualnie prowadzę stronę dla fundacji "Rycerze Rolanda" gdzie udzielam się społecznie.
+                        Moja rola polega na prowadzeniu strony, zbieraniu materiałów w internecie oraz w terenie.
+                        Współpracuję z działem marketingu głównego sponsora oraz zajmuję się promocją i reklamą strony
+                        internetowej, a także fundacji.
+                        Między innymi: robię i obrabiam nadesłane zdjęcia, przeprowadzam wywiady oraz piszę teksty na
+                        stronę.
+                    </p>
+                </div>
+            </article>
+            <article class="page">
+                <h2 class="page__title">Fundacja Rycerze Rolanda</h2>
+                <!-- zamień img na div z bg-img ponieważ sama zmiana display nie wystarcza -->
+                <div> <img class="page__img" src="./assets/img/rycerze.png" alt="dyplom"></div>
+                <div class="page__description">
+                    <ul class="page__description--link">
+                        <li><a href="https://rycerzerolanda.pl" class="page__description--link"></a><br>
+                            <a href="https://construction-company-v1.netlify.app/" class="page__description--link"
+                                target="_blank">Fundacja Rycerze Rolanda</a></li><br>
+                        <li> <a href="https://github.com/kamilmuzyka91/construction-company"
+                                class="page__description--link" target="_blank">GitHub</a></li>
+
+                    </ul>
+                    <h3 class="page__description--title">Technologie:</h3>
+                    <ul class="page__description--technology">
+                        <li>Wordpress</li>
+                    </ul>
+                    <h3 class="page__description--work">Moja praca</h3>
+                    <p class="page__description--about">
+                        Wykupienie serwera oraz domeny, instalacja SSL, uzupełnianie kontentu.
+                        Aktualnie prowadzę stronę dla fundacji "Rycerze Rolanda" gdzie udzielam się społecznie.
+                        Moja rola polega na prowadzeniu strony, zbieraniu materiałów w internecie oraz w terenie.
+                        Współpracuję z działem marketingu głównego sponsora oraz zajmuję się promocją i reklamą strony
+                        internetowej, a także fundacji.
+                        Między innymi: robię i obrabiam nadesłane zdjęcia, przeprowadzam wywiady oraz piszę teksty na
+                        stronę.
+                    </p>
+                </div>
+            </article>
+            <article class="page">
+                <h2 class="page__title">Fundacja Rycerze Rolanda</h2>
+                <!-- zamień img na div z bg-img ponieważ sama zmiana display nie wystarcza -->
+                <div> <img class="page__img" src="./assets/img/rycerze.png" alt="dyplom"></div>
+                <div class="page__description">
+                    <ul class="page__description--link">
+                        <li><a href="https://rycerzerolanda.pl" class="page__description--link"></a><br>
+                            <a href="https://construction-company-v1.netlify.app/" class="page__description--link"
+                                target="_blank">Fundacja Rycerze Rolanda</a></li><br>
+                        <li> <a href="https://github.com/kamilmuzyka91/construction-company"
+                                class="page__description--link" target="_blank">GitHub</a></li>
+
+                    </ul>
+                    <h3 class="page__description--title">Technologie:</h3>
+                    <ul class="page__description--technology">
+                        <li>Wordpress</li>
+                    </ul>
+                    <h3 class="page__description--work">Moja praca</h3>
+                    <p class="page__description--about">
+                        Wykupienie serwera oraz domeny, instalacja SSL, uzupełnianie kontentu.
+                        Aktualnie prowadzę stronę dla fundacji "Rycerze Rolanda" gdzie udzielam się społecznie.
+                        Moja rola polega na prowadzeniu strony, zbieraniu materiałów w internecie oraz w terenie.
+                        Współpracuję z działem marketingu głównego sponsora oraz zajmuję się promocją i reklamą strony
+                        internetowej, a także fundacji.
+                        Między innymi: robię i obrabiam nadesłane zdjęcia, przeprowadzam wywiady oraz piszę teksty na
+                        stronę.
+                    </p>
+                </div>
+            </article>
+            <article class="page">
+                <h2 class="page__title">Fundacja Rycerze Rolanda</h2>
+                <!-- zamień img na div z bg-img ponieważ sama zmiana display nie wystarcza -->
+                <div> <img class="page__img" src="./assets/img/rycerze.png" alt="dyplom"></div>
+                <div class="page__description">
+                    <ul class="page__description--link">
+                        <li><a href="https://rycerzerolanda.pl" class="page__description--link"></a><br>
+                            <a href="https://construction-company-v1.netlify.app/" class="page__description--link"
+                                target="_blank">Fundacja Rycerze Rolanda</a></li><br>
+                        <li> <a href="https://github.com/kamilmuzyka91/construction-company"
+                                class="page__description--link" target="_blank">GitHub</a></li>
+
+                    </ul>
+                    <h3 class="page__description--title">Technologie:</h3>
+                    <ul class="page__description--technology">
+                        <li>Wordpress</li>
+                    </ul>
+                    <h3 class="page__description--work">Moja praca</h3>
+                    <p class="page__description--about">
+                        Wykupienie serwera oraz domeny, instalacja SSL, uzupełnianie kontentu.
+                        Aktualnie prowadzę stronę dla fundacji "Rycerze Rolanda" gdzie udzielam się społecznie.
+                        Moja rola polega na prowadzeniu strony, zbieraniu materiałów w internecie oraz w terenie.
+                        Współpracuję z działem marketingu głównego sponsora oraz zajmuję się promocją i reklamą strony
+                        internetowej, a także fundacji.
+                        Między innymi: robię i obrabiam nadesłane zdjęcia, przeprowadzam wywiady oraz piszę teksty na
+                        stronę.
+                    </p>
+                </div>
+            </article>
+            <article class="page">
+                <h2 class="page__title">Fundacja Rycerze Rolanda</h2>
+                <!-- zamień img na div z bg-img ponieważ sama zmiana display nie wystarcza -->
+                <div> <img class="page__img" src="./assets/img/rycerze.png" alt="dyplom"></div>
+                <div class="page__description">
+                    <ul class="page__description--link">
+                        <li><a href="https://rycerzerolanda.pl" class="page__description--link"></a><br>
+                            <a href="https://construction-company-v1.netlify.app/" class="page__description--link"
+                                target="_blank">Fundacja Rycerze Rolanda</a></li><br>
+                        <li> <a href="https://github.com/kamilmuzyka91/construction-company"
+                                class="page__description--link" target="_blank">GitHub</a></li>
+
+                    </ul>
+                    <h3 class="page__description--title">Technologie:</h3>
+                    <ul class="page__description--technology">
+                        <li>Wordpress</li>
+                    </ul>
+                    <h3 class="page__description--work">Moja praca</h3>
+                    <p class="page__description--about">
+                        Wykupienie serwera oraz domeny, instalacja SSL, uzupełnianie kontentu.
+                        Aktualnie prowadzę stronę dla fundacji "Rycerze Rolanda" gdzie udzielam się społecznie.
+                        Moja rola polega na prowadzeniu strony, zbieraniu materiałów w internecie oraz w terenie.
+                        Współpracuję z działem marketingu głównego sponsora oraz zajmuję się promocją i reklamą strony
+                        internetowej, a także fundacji.
+                        Między innymi: robię i obrabiam nadesłane zdjęcia, przeprowadzam wywiady oraz piszę teksty na
+                        stronę.
+                    </p>
+                </div>
+            </article>
+        </div>
     </section>
+
     <!-- END GALLERY -->
-    <section id="section_5" class="footer container">
+    <section id="section_5" class="footer">
         <div class="footer__wrapper">
             <ul class="footer__item">
                 <li><span> &#9400 2021 Kamil Muzyka</span></li>
