@@ -7,16 +7,12 @@
 
   .about__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
-    @include tablet {
-      flex-direction: column;
-    }
-
     @include notebook {
-      flex-direction: row;
+      flex-direction: column;
     }
 
     .about {

@@ -1,39 +1,14 @@
-h1 {
-  text-align: center;
-}
-
 .portfolio__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  background: $section-bg;
-
   .portfolio__pages {
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    text-align: left;
-
-    @include tablet {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    @include notebook {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
     .page {
-      display: flex;
-      flex-direction: column;
-      width: 360px; // max 390 - mobile max-width 792/2=396 tablet 1024px desktop 1352
+      width: 360px;
       height: 600px;
       margin: 2rem;
+
       .page__title {
         color: black;
       }

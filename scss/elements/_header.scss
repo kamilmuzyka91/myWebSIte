@@ -116,6 +116,10 @@
       @include mobile {
         display: block;
       }
+
+      @include tablet {
+        display: block;
+      }
     }
   }
 }
