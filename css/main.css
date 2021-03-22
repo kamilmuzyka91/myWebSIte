@@ -1122,6 +1122,12 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+@media (min-width: 1025px) {
+  .diploma .diploma__wrapper {
+    flex-direction: row;
+  }
 }
 .diploma .diploma__wrapper img {
   width: 20rem;

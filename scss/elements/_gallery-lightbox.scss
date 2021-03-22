@@ -16,9 +16,12 @@ h1 {
   .diploma__wrapper {
     display: flex;
     flex-direction: column;
-
     flex-wrap: wrap;
-
+    margin-bottom: 2rem;
+    
+    @include notebook {
+      flex-direction: row;
+    }
     img {
       width: 20rem;
       height: 30rem;
