@@ -4,7 +4,7 @@ $max-tablet-width: 1024px;
 $min-desktop-width: 1025px;
 
 @mixin notebook {
-  @media (mi-width: $min-desktop-width) {
+  @media (min-width: $min-desktop-width) {
     @content;
   }
 }
