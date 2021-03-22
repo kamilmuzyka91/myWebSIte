@@ -1,0 +1,35 @@
+#lightbox {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    font: normal 900 3em "Font Awesome 5 Free";
+    content: "\f057";
+    cursor: pointer;
+    color: #fff;
+    position: fixed;
+    top: 10%;
+    left: 90%;
+  }
+  img {
+    transform: scale(0.5);
+    width: 300%;
+    height: auto;
+    background: #fff;
+    cursor: auto;
+    // padding: 4px;
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

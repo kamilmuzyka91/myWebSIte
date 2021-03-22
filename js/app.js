@@ -11,18 +11,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // lightbox gallery
-
+  const images_diploma = document.querySelectorAll(".diploma__img");
+  const images_portfolio = document.querySelectorAll(".page__img");
   const lightbox = document.createElement("div");
   const img = document.createElement("img");
-  const images = document.querySelectorAll(".gallery__img");
   lightbox.id = "lightbox";
   document.body.appendChild(lightbox);
 
-  images.forEach((images) => {
+  images_diploma.forEach((images) => {
     images.addEventListener("click", (e) => {
       lightbox.classList.add("active");
       const img = document.createElement("img");
       img.src = images.src;
+
+      while (lightbox.firstChild) {
+        lightbox.removeChild(lightbox.firstChild);
+      }
+      lightbox.appendChild(img);
+    });
+  });
+
+  images_portfolio.forEach((images) => {
+    images.addEventListener("click", (e) => {
+      lightbox.classList.add("active");
+      const img = document.createElement("img");
+      img.src = images.src;
+
       while (lightbox.firstChild) {
         lightbox.removeChild(lightbox.firstChild);
       }
