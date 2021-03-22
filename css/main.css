@@ -1096,6 +1096,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 #lightbox.active::before {
   font: normal 900 3em "Font Awesome 5 Free";
@@ -1107,8 +1108,7 @@ a {
   left: 90%;
 }
 #lightbox.active img {
-  transform: scale(0.5);
-  width: 200%;
+  width: 100%;
   height: auto;
   background: #fff;
   cursor: auto;
