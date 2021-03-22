@@ -1108,15 +1108,10 @@ a {
 }
 #lightbox.active img {
   transform: scale(0.5);
-  width: 300%;
+  width: 200%;
   height: auto;
   background: #fff;
   cursor: auto;
-}
-@media (max-width: 768px) {
-  #lightbox.active img {
-    width: 100%;
-  }
 }
 
 h1 {

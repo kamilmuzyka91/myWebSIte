@@ -23,13 +23,13 @@
   }
   img {
     transform: scale(0.5);
-    width: 300%;
+    width: 200%;
     height: auto;
     background: #fff;
     cursor: auto;
-    // padding: 4px;
-    @include mobile {
-      width: 100%;
-    }
+
+    // @include mobile {
+    //   width: 100%;
+    // }
   }
 }
