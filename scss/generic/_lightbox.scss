@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 100%;
+  width: 100%;
 
   &::before {
     font: normal 900 3em "Font Awesome 5 Free";
@@ -27,7 +27,7 @@
     height: auto;
     background: #fff;
     cursor: auto;
-    
+
     @include tablet {
       width: 100%;
 
