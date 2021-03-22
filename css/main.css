@@ -505,11 +505,6 @@ a {
 .header .menu__toggle span:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  .header .menu__toggle {
-    display: block;
-  }
-}
 @media (min-width: 1025px) {
   .header .menu__toggle {
     display: none;
@@ -918,18 +913,17 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 5rem;
   margin-top: 950px;
 }
 .about__me .about__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 @media (min-width: 1025px) {
   .about__me .about__container {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .about__me .about__container .about {

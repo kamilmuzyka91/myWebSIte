@@ -124,9 +124,6 @@
         }
       }
 
-      @include tablet {
-        display: block;
-      }
 
       @include notebook {
         display: none;
