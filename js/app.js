@@ -48,4 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target !== e.currentTarget) return;
     lightbox.classList.remove("active");
   });
+
+  const btnmenu = document.querySelector(".menu__btn");
+  
+  function check() {
+    btnmenu.addEventListener("click", () => {
+      console.log("Klik");
+    });
+  }
 });

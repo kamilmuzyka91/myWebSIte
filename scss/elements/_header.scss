@@ -62,9 +62,26 @@
         background: $header-bg-grey;
       }
     }
-
     @include tablet {
+      position: absolute;
+      left: 0;
+      top: 95px;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      padding-bottom: 20px;
       display: none;
+
+      .nav__element {
+        padding: 0;
+      }
+
+      .nav__link {
+        display: block;
+        padding: 14px 20px;
+        color: $header-link-white;
+        background: $header-bg-grey;
+      }
     }
   }
 
@@ -77,26 +94,24 @@
       opacity: 0;
       padding: 2rem;
 
-      @include mobile {
-        &:checked {
-          ~ .header__nav {
-            display: flex;
-            background: $header-bg-grey;
-          }
+      &:checked {
+        ~ .header__nav {
+          display: flex;
+          background: $header-bg-grey;
+        }
 
-          ~ .menu__toggle {
-            span {
-              &:nth-child(1) {
-                transform: rotate(45deg) translate(2px, 5px);
-              }
+        ~ .menu__toggle {
+          span {
+            &:nth-child(1) {
+              transform: rotate(45deg) translate(2px, 5px);
+            }
 
-              &:nth-child(2) {
-                opacity: 0;
-              }
+            &:nth-child(2) {
+              opacity: 0;
+            }
 
-              &:nth-child(3) {
-                transform: rotate(-45deg) translate(2px, -5px);
-              }
+            &:nth-child(3) {
+              transform: rotate(-45deg) translate(2px, -5px);
             }
           }
         }
@@ -110,7 +125,7 @@
       @include tablet {
         margin-right: 1rem;
       }
-      
+
       span {
         display: block;
         width: 20px;
@@ -123,7 +138,6 @@
           margin-bottom: 0;
         }
       }
-
 
       @include notebook {
         display: none;

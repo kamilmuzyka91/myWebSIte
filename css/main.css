@@ -459,7 +459,23 @@ a {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .header__nav {
+    position: absolute;
+    left: 0;
+    top: 95px;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 20px;
     display: none;
+  }
+  .header__nav .nav__element {
+    padding: 0;
+  }
+  .header__nav .nav__link {
+    display: block;
+    padding: 14px 20px;
+    color: #ddd;
+    background: #303030;
   }
 }
 .header .menu__btn {
@@ -470,20 +486,18 @@ a {
   opacity: 0;
   padding: 2rem;
 }
-@media (max-width: 768px) {
-  .header .menu__btn:checked ~ .header__nav {
-    display: flex;
-    background: #303030;
-  }
-  .header .menu__btn:checked ~ .menu__toggle span:nth-child(1) {
-    transform: rotate(45deg) translate(2px, 5px);
-  }
-  .header .menu__btn:checked ~ .menu__toggle span:nth-child(2) {
-    opacity: 0;
-  }
-  .header .menu__btn:checked ~ .menu__toggle span:nth-child(3) {
-    transform: rotate(-45deg) translate(2px, -5px);
-  }
+.header .menu__btn:checked ~ .header__nav {
+  display: flex;
+  background: #303030;
+}
+.header .menu__btn:checked ~ .menu__toggle span:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 5px);
+}
+.header .menu__btn:checked ~ .menu__toggle span:nth-child(2) {
+  opacity: 0;
+}
+.header .menu__btn:checked ~ .menu__toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, -5px);
 }
 .header .menu__toggle {
   display: block;
