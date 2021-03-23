@@ -23,13 +23,13 @@
     left: 85%;
   }
   img {
-    width: 120%;
+    width: 70%;
     height: auto;
     background: #fff;
     cursor: auto;
 
     @include tablet {
-      width: 100%;
+      width: 60%;
 
       @include notebook {
         width: 40%;

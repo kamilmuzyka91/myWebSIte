@@ -1130,14 +1130,14 @@ a {
   left: 85%;
 }
 #lightbox.active img {
-  width: 120%;
+  width: 70%;
   height: auto;
   background: #fff;
   cursor: auto;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   #lightbox.active img {
-    width: 100%;
+    width: 60%;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) and (min-width: 1025px) {
